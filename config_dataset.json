@@ -1,0 +1,8 @@
+{"K#": 1, 
+ "M#": 10, 
+ "N#": 1000,
+ "PS%": 0.1, 
+ "Instances#": 6, 
+ "Path": "input/M10N1000", 
+ "Prefix": "instance"
+}
