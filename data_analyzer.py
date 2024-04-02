@@ -19,13 +19,13 @@ def merge_all_files(input_dir):
                 # open an file
                 with open(raw_file, 'r') as fp:
                     content = fp.read()
-                # Check if the file name is already present in the dictionary
-                if file_name in merged_contents:
-                    # Append the content to the existing entry
-                    merged_contents[file_name] += content
-                else:
-                    # Create a new entry for the file name
-                    merged_contents[file_name] = content
+                    # Check if the file name is already present in the dictionary
+                    if file_name in merged_contents:
+                        # Append the content to the existing entry
+                        merged_contents[file_name] += content
+                    else:
+                        # Create a new entry for the file name
+                        merged_contents[file_name] = content
 
     # Write the merged contents to individual files
     for file_name, content in merged_contents.items():
@@ -48,13 +48,13 @@ def analysis_data(timeout, timelimit):
                 # open an file
                 with open(raw_file, 'r') as fp:
                     content = fp.read()                    
-                lines = content.strip().split('\n')
-                for line in lines:
-                    # Parse the JSON object
-                    json_obj = json.loads(line)
-                    runtime_dict[json_obj['problem']] = float(json_obj['result']['runtime'])
-                for key, value in runtime_dict.items():
-                    merged_dict.setdefault(key, []).append(value)    
+                    lines = content.strip().split('\n')
+                    for line in lines:
+                        # Parse the JSON object
+                        json_obj = json.loads(line)
+                        runtime_dict[json_obj['problem']] = float(json_obj['result']['runtime'])
+                    for key, value in runtime_dict.items():
+                        merged_dict.setdefault(key, []).append(value)    
     
     i = 0
     for dir_path, folders, files in os.walk('output'):

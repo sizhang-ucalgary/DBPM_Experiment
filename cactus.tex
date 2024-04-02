@@ -13,13 +13,13 @@
 \begin{tikzpicture}
 \begin{axis}[
   ylabel=Execution time (seconds),
-  xlabel=Number of problems,
-  width= 2*\textwidth,
-  height= 1*\textwidth,
+  xlabel=Number of instances,
+  width= 1.8*\textwidth,
+  height= 0.6*\textwidth,
   xmin=0,
   ymin=0,
   xmax=300,
-  %ymax=28000,
+  %ymax=20000,
   scaled y ticks = false,
   grid=both,
   % legend
@@ -27,6 +27,7 @@
                   BE,
                   BE+CC,
                   BE+NF,
+                  %BE+NF+LI,
                   BE+NF+FM,
                   BE+NF+MD,
                   BE+NF+MD+LI
@@ -34,12 +35,13 @@
   every axis legend/.append style={at={(0, 1)}, anchor=north west, outer xsep=5pt, outer ysep=5pt, legend columns=3, nodes={scale=1.0}}
     ]
 % Load data from CSV file
-\addplot[mark=+, color=black] table {output/BE.csv};
-\addplot[mark=o, color=violet] table {output/BE_CC.csv};
-\addplot[mark=*, color=blue] table {output/BE_NF.csv};
-\addplot[mark=+, color=cyan] table {output/BE_NF_FM.csv};
-\addplot[mark=o, color=brown] table {output/BE_NF_MD.csv};
-\addplot[mark=*, color=red] table {output/BE_NF_MD_LI.csv};
+\addplot[mark=|, color=black] table {output/BE.csv};
+\addplot[mark=x, color=brown] table {output/BE_CC.csv};
+\addplot[mark=o, color=violet] table {output/BE_NF.csv};
+%\addplot[mark=*, color=purple] table {output/BE_NF_LI.csv};
+\addplot[mark=|, color=cyan] table {output/BE_NF_FM.csv};
+\addplot[mark=x, color=blue] table {output/BE_NF_MD.csv};
+\addplot[mark=o, color=red] table {output/BE_NF_MD_LI.csv};
 \end{axis}
 \end{tikzpicture}
 \end{document}
