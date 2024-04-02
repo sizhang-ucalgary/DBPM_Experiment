@@ -10,6 +10,10 @@ You may need install the following python libraries:
 You can install them by the following commands:
 - python3.10 -m pip install --upgrade --user numpy scipy disjoint-set stirling python-sat[pblib,aiger]
 
+The **_input_** folder contains the dataset that are used for the experiments.
+
+The **_slurm_** folder contains the scripts to run the experiments on the ARC cluster.
+
 The **dataset_generator.py** is used to generate random input dataset.
 You can tune parameters in the **config_dataset.json**.
 
