@@ -26,4 +26,5 @@ Given the name of encoding, the directory of input instances, the directory of o
 The **test_driver.py** traversed and solve each instance from the input directory and stored the result to the output directory.
 
 The **data_analyzer.py** is used to analysis the output result.
+
 The **cactus.tex** is used to draw the result in form of the Cactus plot.
