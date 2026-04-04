@@ -28,3 +28,19 @@ The **test_driver.py** solved each instance from the input directory and saved t
 The **data_analyzer.py** is used to analysis the output result.
 
 The **cactus.tex** is used to draw the result in form of the Cactus plot.
+
+## 📖 Citation
+If you use this work in your research, please cite:
+```bibtex
+@inproceedings{Zhang2024,
+  author       = {Si Zhang and
+                  Philip W. L. Fong},
+  title        = {Mining Domain-Based Policies},
+  booktitle    = {Proceedings of {CODASPY}},
+  pages        = {403--414},
+  publisher    = {{ACM}},
+  year         = {2024},
+  url          = {https://doi.org/10.1145/3626232.3653265},
+  doi          = {10.1145/3626232.3653265}
+}
+```
