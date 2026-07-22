@@ -32,15 +32,23 @@ The **cactus.tex** is used to draw the result in form of the Cactus plot.
 ## 📖 Citation
 If you use this work in your research, please cite:
 ```bibtex
-@inproceedings{Zhang2024,
+@inproceedings{DBLP:conf/codaspy/ZhangF24,
   author       = {Si Zhang and
                   Philip W. L. Fong},
+  editor       = {Jo{\~{a}}o P. Vilela and
+                  Haya Schulmann and
+                  Ninghui Li},
   title        = {Mining Domain-Based Policies},
-  booktitle    = {Proceedings of {CODASPY}},
+  booktitle    = {Proceedings of the Fourteenth {ACM} Conference on Data and Application
+                  Security and Privacy, {CODASPY} 2024, Porto, Portugal, June 19-21,
+                  2024},
   pages        = {403--414},
   publisher    = {{ACM}},
   year         = {2024},
   url          = {https://doi.org/10.1145/3626232.3653265},
-  doi          = {10.1145/3626232.3653265}
+  doi          = {10.1145/3626232.3653265},
+  timestamp    = {Mon, 09 Feb 2026 18:35:02 +0100},
+  biburl       = {https://dblp.org/rec/conf/codaspy/ZhangF24.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
