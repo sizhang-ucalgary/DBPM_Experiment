@@ -46,9 +46,6 @@ If you use this work in your research, please cite:
   publisher    = {{ACM}},
   year         = {2024},
   url          = {https://doi.org/10.1145/3626232.3653265},
-  doi          = {10.1145/3626232.3653265},
-  timestamp    = {Mon, 09 Feb 2026 18:35:02 +0100},
-  biburl       = {https://dblp.org/rec/conf/codaspy/ZhangF24.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
+  doi          = {10.1145/3626232.3653265}
 }
 ```
